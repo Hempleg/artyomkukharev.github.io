@@ -1,1 +1,1 @@
-# artyomkukharev.github.io
+# artyomkukharev.com
