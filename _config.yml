@@ -24,12 +24,18 @@ github_username:  artyomkukharev
 linkedin_username: artyomkukharev
 skype_username: hempleg
 google_analytics: UA-90233317-1
+disqus.shortname: artyomkukharev
+
+excerpt_separator: <!--more-->
+
+paginate: 1
 
 # Build settings
 markdown: kramdown
 theme:
 gems:
   - jekyll-feed
+  - jekyll-paginate
 exclude:
   - Gemfile
   - Gemfile.lock

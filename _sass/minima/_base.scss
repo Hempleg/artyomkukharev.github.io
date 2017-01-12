@@ -47,7 +47,30 @@ img {
   vertical-align: middle;
 }
 
+/**
+ * Tags
+ */
+.tags {
+}
 
+.tag {
+    line-height: 35px;
+    background-color: $brand-color;
+    border-radius: 6px;
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+}
+
+.tag:hover {
+    text-decoration: none;
+    background-color: $brand-color-dark;
+    color: white;
+}
+
+.tag:visited {
+  color: white;
+}
 
 /**
  * Figures
@@ -94,16 +117,44 @@ a {
   color: $brand-color;
   text-decoration: none;
 
-  &:visited {
+/*  &:visited {
     color: darken($brand-color, 15%);
   }
-
+*/
   &:hover {
-    color: $text-color;
+    color: $brand-color-dark;
     text-decoration: underline;
   }
 }
 
+
+/**
+ * Paggination
+ */
+.pagination {
+  float: right;
+}
+
+.previous, .next {
+  border-radius: 6px;
+  padding: 10px;
+  color: white;
+}
+
+span.previous, span.next {
+    background-color: $grey-color-light;
+}
+
+a.next, a.previous {
+  text-decoration: none;
+  background-color: $brand-color;
+
+  &:hover {
+    text-decoration: none;
+    background-color: $brand-color-dark;
+    color: white;
+  }
+}
 
 
 /**
