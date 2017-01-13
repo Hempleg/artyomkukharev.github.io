@@ -26,7 +26,7 @@
 
   <li><a href="javascript:void(0);" target="_blank" title="Pin it" onclick="window.open('http://pinterest.com/pin/create/button/?url={{site.url}}{{include.page_url}}&description={{include.page_title}}', '', 'width=800, height=600');"><img alt="Pin it" src="/assets/social/Pinterest.svg"></a></li>
 
-  <li><a href="javascript:void(0)" target="_blank" title="Share on LinkedIn" onclick="window.open('http://www.linkedin.com/shareArticle?mini=true&url={{site.url}}{{include.page_url}}&title={{include.page_title}}&summary={{ excerpt | url_encode }}&source={{site.url}}{{include.page_url}}', '', 'width=800, height=600');"><img alt="Share on LinkedIn" src="/assets/social/LinkedIn.svg"></a></li>
+  <li><a href="javascript:void(0)" target="_blank" title="Share on LinkedIn" onclick="window.open('http://www.linkedin.com/shareArticle?mini=true&url={{site.url}}{{include.page_url}}&title={{include.page_title}}&summary={{ excerpt | strip_html | url_encode }}&source={{site.url}}{{include.page_url}}', '', 'width=800, height=600');"><img alt="Share on LinkedIn" src="/assets/social/LinkedIn.svg"></a></li>
 
 <!--   <li><a href="" target="_blank" title="Publish on WordPress" onclick="window.open('http://wordpress.com/press-this.php?u={{site.url}}{{include.page_url}}&t={{include.page_title}}&s=', '', 'width=800, height=600');"><img alt="Publish on WordPress" src="/assets/social/Wordpress.svg"></a></li> -->
 </ul>
