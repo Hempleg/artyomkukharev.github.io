@@ -1,7 +1,6 @@
 ---
 layout: post
 title: (--Test--) Building a blog using Jekyll. Install and quick setup
-comments: true
 tags:
 - jekyll
 - installation
