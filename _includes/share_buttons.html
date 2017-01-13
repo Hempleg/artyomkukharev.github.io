@@ -1,0 +1,34 @@
+{% assign tags = (include.page_tags | join: ' %23' ) %}
+
+{% capture excerpt %}
+{{include.page_excerpt}}
+{% endcapture %}
+
+<div class="social">
+
+<img class="likeandshare" src="{{site.url}}/assets/social/likeandshare.png" />
+<ul class="share-buttons">
+  <li>
+  		<a href="javascript:void(0);" title="Share on Facebook" target="_blank" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u={{site.url}}{{include.page_url}}&t={{include.page_title}}', '', 'width=800, height=600');">
+  				<img alt="Share on Facebook" src="/assets/social/Facebook.svg">
+  		</a>
+  </li>
+
+  <li>
+		  <a href="javascript:void(0);" target="_blank" title="Tweet" onclick="window.open('https://twitter.com/intent/tweet?text={{include.page_title}} - {{site.url}}{{include.page_url}} {{ tags }}', '', 'width=800, height=600');">
+		  		<img alt="Tweet" src="/assets/social/Twitter.svg">
+		  </a>
+  </li>
+
+  <li><a href="javascript:void(0);" target="_blank" title="Share on Google+" onclick="window.open('https://plus.google.com/share?url={{site.url}}{{include.page_url}}', '', 'width=800, height=600');"><img alt="Share on Google+" src="/assets/social/Google+.svg"></a></li>
+
+<!--   <li><a href="http://www.tumblr.com/share?v=3&u={{site.url}}{{include.page_url}}&t=&s=" target="_blank" title="Post to Tumblr" onclick="window.open('http://www.tumblr.com/share?v=3&u=' + encodeURIComponent(document.URL) + '&t=' +  {{include.page_title}}); return false;"><img alt="Post to Tumblr" src="/assets/social/Tumblr.svg"></a></li> -->
+
+  <li><a href="javascript:void(0);" target="_blank" title="Pin it" onclick="window.open('http://pinterest.com/pin/create/button/?url={{site.url}}{{include.page_url}}&description={{include.page_title}}', '', 'width=800, height=600');"><img alt="Pin it" src="/assets/social/Pinterest.svg"></a></li>
+
+  <li><a href="javascript:void(0)" target="_blank" title="Share on LinkedIn" onclick="window.open('http://www.linkedin.com/shareArticle?mini=true&url={{site.url}}{{include.page_url}}&title={{include.page_title}}&summary={{ excerpt | url_encode }}&source={{site.url}}{{include.page_url}}', '', 'width=800, height=600');"><img alt="Share on LinkedIn" src="/assets/social/LinkedIn.svg"></a></li>
+
+<!--   <li><a href="" target="_blank" title="Publish on WordPress" onclick="window.open('http://wordpress.com/press-this.php?u={{site.url}}{{include.page_url}}&t={{include.page_title}}&s=', '', 'width=800, height=600');"><img alt="Publish on WordPress" src="/assets/social/Wordpress.svg"></a></li> -->
+</ul>
+
+</div>

@@ -73,6 +73,55 @@ img {
 }
 
 /**
+ * Share buttons
+ */
+
+.social {
+  margin: auto;
+  max-width: 600px;
+}
+
+.likeandshare {
+  width: 250px;
+  height: 250px;
+  float: left;
+}
+
+ul.share-buttons{
+  float: right;
+  margin: 40px;
+  margin-top: 100px;
+  list-style: none;
+  padding: 0;
+}
+
+ul.share-buttons li{
+  display: inline;
+}
+
+ul.share-buttons .sr-only {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+ul.share-buttons img{
+  width: 40px;
+  opacity: 1;
+  filter: alpha(opacity=100); /* For IE8 and earlier */
+
+  &:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+  }
+}
+
+/**
  * Figures
  */
 figure > img {
