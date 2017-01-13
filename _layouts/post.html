@@ -20,7 +20,7 @@ layout: default
 
   {% include share_buttons.html page_excerpt=page.excerpt page_url=page.url page_title=page.title page_tags=page.tags %}
 
-  {% if site.disqus.shortname %}
+  {% if site.disqus_shortname %}
     {% include disqus_comments.html %}
   {% endif %}
 </article>
