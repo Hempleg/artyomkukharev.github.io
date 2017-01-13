@@ -28,7 +28,7 @@ disqus_shortname: artyomkukharev
 
 excerpt_separator: <!--more-->
 
-paginate: 1
+paginate: 10
 
 # Build settings
 markdown: kramdown
